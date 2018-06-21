@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  storeapp:
+    image: ${DOCKER_REGISTRY}storeapp
+    build:
+      context: .
+      dockerfile: StoreApp\Dockerfile
