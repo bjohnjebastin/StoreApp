@@ -6,3 +6,10 @@ services:
     build:
       context: .
       dockerfile: StoreApp\Dockerfile
+
+  storeapp.service:
+    image: ${DOCKER_REGISTRY}storeappservice
+    build:
+      context: .
+      dockerfile: StoreApp.Service\Dockerfile
+
